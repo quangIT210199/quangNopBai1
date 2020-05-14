@@ -1,0 +1,90 @@
+
+@media (min-width: 992px){
+    .collapse{
+        margin: 0 25px;
+    }
+
+    .nav-link{
+        color: #fff !important;
+        position: relative !important;
+    }
+    
+    .nav-link::before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 0;
+        transition:  0.3s all linear;
+        left: 50%;
+        top: 80%;
+    }
+
+    .bg-light.scrolled{
+        background-color: rgb(33, 37, 41) !important;
+        height: 64px;
+    }
+    /* Carousel */
+    .carousel-inner img{
+        width: 100%;
+        height: 100% ;
+        object-fit: cover; 
+        /* magic của object-fit */
+    }
+
+    .carousel-caption{
+        font-size: 26px;
+    }
+
+    .carousel-caption h4{
+        font-size: 50px;
+    }
+    
+}
+
+/* cho Mobile */
+@media (max-width : 768px){
+    .loader {
+        top: 40%;
+        left: 40%;
+    }
+    /* Phan footer */
+    .footer{
+        text-align: center;
+    }
+
+    .carousel-inner img{
+        height: 100vh;
+    }
+
+    .socail-contact{
+        justify-content: center;
+    }
+    .footer__follow button{
+        width: 100%;
+    }
+    /* carousel caption */
+    .carousel-caption{
+        font-size: 16px;
+    }
+
+    .carousel-caption h4{
+        font-size: 20px;
+    }
+
+    .carousel-caption button{
+        width: 150px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    /* joinus */
+    .joinus__text{
+        padding: 50px 0 0 0;
+    }
+
+    .joinus__text button{
+        width: 100%;
+        margin-left: 0;
+    }
+}
